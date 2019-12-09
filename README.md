@@ -1,4 +1,4 @@
-# Subaru Sata Harvester
+# Subaru Data Harvester
 Chrome extension and supporting code to make a personal offline backup of STIS documentation
 
 Use at your own risk, this includes no warranty or guarantee of any sort. This was just hacked together over a weekend without any attention given to polish.
