@@ -1,0 +1,36 @@
+{
+    "name": "Subaru Documentation Harvester",
+    "version": "1.0",
+    "description": "Harvests content from HTML service manuals",
+    "options_page": "sdh_options.html",
+    "permissions": [
+        "pageCapture",
+        "tabs",
+        "downloads"
+    ],
+    "background": {
+        "scripts": [
+            "sdh_background.js"
+        ],
+        "persistent": false
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "https://techinfo.subaru.com/stis/doc/htmlDiagnostics/*"
+            ],
+            "css": [
+                //"sdh_client.css"
+            ],
+            "js": [
+                "sdh_client.js",
+                "lib/jquery-3.4.1.min.js"
+            ]
+        }
+    ],
+    "browser_action": {
+    	"default_title": "SDH",
+    	"default_popup": "sdh_popup.html"
+    },
+    "manifest_version": 2
+}
