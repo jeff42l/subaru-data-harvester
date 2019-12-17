@@ -20,6 +20,9 @@ Known Issues:
 * Files will save as .txt, so you'll need to rename them all to .mht, this is inconvenient
 * Haven't been able to find a way to coerce chrome into saving without opening the Save dialog, so you still have to click Save for every file (and there will be a lot)
 
+Renaming .txt to .mht:
+* Easiest, on a Mac, is to install the Perl-based "rename" app, https://formulae.brew.sh/formula/rename
+* Then, from the base directory of your results, run `find . -name "*.txt" -exec rename -s '.txt' '.mht' {} +`
+
 TODO: 
-* Add documentation on file extension bulk changes
 * Create a navigation page based on the menudata.json structure
